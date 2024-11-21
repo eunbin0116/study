@@ -1,0 +1,183 @@
+/* CommuPage.css */
+.commu-page {
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.commu-page h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 300px;
+}
+
+.posts-list {
+    width: 60%;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap; /* 게시물들이 일정 너비를 채우면 다음 줄로 넘어가도록 설정 */
+    gap: 15px; /* 게시물 간 간격 */
+}
+
+.posts-list h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+    width: 100%; /* 제목을 한 줄에 차지하도록 설정 */
+}
+
+.posts-list ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.posts-list .post-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: calc(33.33% - 15px); /* 한 줄에 3개의 게시물이 배치되도록 설정 */
+    box-sizing: border-box; /* padding이 width에 포함되도록 설정 */
+}
+
+.posts-list .post-item:hover {
+    transform: translateY(-5px);
+}
+
+.posts-list .post-item h4 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.posts-list .post-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.posts-list .post-item small {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.new-post-form {
+    width: 47%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-post-form h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.new-post-form .form-group {
+    margin-bottom: 20px;
+}
+
+.new-post-form label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.new-post-form input,
+.new-post-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    margin-top: 5px;
+}
+
+.new-post-form input:focus,
+.new-post-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.new-post-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-post-form button:hover {
+    background-color: #0056b3;
+}
+
+.new-post-form button:active {
+    background-color: #004080;
+}
+
+/* 모바일 및 작은 화면에서 레이아웃 조정 */
+@media (max-width: 768px) {
+    .commu-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .posts-list {
+        width: 100%;
+        margin-right: 0;
+        flex-direction: column; /* 모바일에서는 세로로 나열 */
+    }
+
+    .new-post-form {
+        width: 100%;
+    }
+
+    .commu-page h2 {
+        font-size: 1.8rem;
+    }
+
+    .posts-list h3,
+    .new-post-form h3 {
+        font-size: 1.4rem;
+    }
+
+    .new-post-form input,
+    .new-post-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .posts-list .post-item {
+        width: 100%; /* 모바일에서는 게시물이 한 줄로 세로로 배치 */
+    }
+}
+
+.delete-button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #e60000;
+}

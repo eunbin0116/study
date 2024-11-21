@@ -1,0 +1,81 @@
+.sanup-page {
+    padding: 30px;
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.sanup-page h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.certificate-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certificate-list ul li {
+    margin-bottom: 10px;
+}
+
+.certificate-list ul li button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-list ul li button:hover {
+    background-color: #0056b3;
+}
+
+.certificate-list ul li button:active {
+    background-color: #004080;
+}
+
+.resources h3,
+.exam-info h3 {
+    color: #007bff;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.resources ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.resources ul li a:hover {
+    text-decoration: underline;
+}
+
+.start-study button {
+    margin-top: 30px;
+    padding: 12px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.start-study button:hover {
+    background-color: #0056b3;
+}

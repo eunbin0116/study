@@ -1,0 +1,129 @@
+/* 로그인 페이지 전체 스타일 */
+.login-page {
+    margin: auto;
+    height:460px;
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    border: 1px solid #ddddddea; /* 배경과 구분을 위한 border 추가 */
+    max-width: 400px; /* 로그인 박스 넓이 설정 */
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+/* 로그인 박스 스타일 */
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+/* 로그인 제목 스타일 */
+.login-page h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+/* 입력 필드 그룹 스타일 */
+.login-page div {
+    margin-bottom: 20px; /* 각 입력 필드의 아래 여백 */
+}
+
+/* 레이블 스타일 */
+.login-page label {
+    width: 38%;
+    float: left;
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* 이메일 및 비밀번호 입력 필드 스타일 */
+.login-page input {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+    transition: border-color 0.3s;
+}
+
+/* 입력 필드 포커스 시 스타일 */
+.login-page input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* 로그인 버튼 스타일 */
+.login-page button {
+    width: 86%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 로그인 버튼 호버 스타일 */
+.login-page button:hover {
+    background-color: #0056b3;
+}
+
+/* 로그인 버튼 클릭 시 스타일 */
+.login-page button:active {
+    background-color: #004080;
+}
+
+/* 회원가입 버튼 스타일 */
+.sign-up-link {
+    margin-top: 20px;
+}
+
+.sign-up-link button {
+    margin-top: 40px;
+    width: 90px;
+    background: none;
+    color: #007bff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.sign-up-link > button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+/* 로그인 폼 작은 화면에서의 반응형 */
+@media (max-width: 400px) {
+    .login-box {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .login-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-page input {
+        font-size: 0.9rem;
+    }
+
+    .login-page button {
+        font-size: 1rem;
+    }
+}

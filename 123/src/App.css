@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* 밝은 회색 배경 */
+  color: #333; /* 기본 텍스트 색상 */
+}
+
+/* App 컨테이너 */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* 상단 내비게이션 바 */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a76d1; /* 파란색 배경 */
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  color: #ffffff; /* 로고 텍스트 색상은 흰색 */
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;  /* 링크 밑줄 제거 */
+  color: inherit;  /* 부모 요소의 텍스트 색상을 그대로 상속 */
+}
+
+/* 로고 텍스트 스타일 */
+.logo h1 {
+  color: #ffffff;  /* 로고의 색상을 흰색으로 설정 */
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.top-menu {
+  display: flex;
+  align-items: center;
+}
+
+.top-menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.top-menu a:hover {
+  background-color: #2c5dbf; /* 강조색 */
+  border-radius: 4px;
+}
+
+/* 중간 네비게이션 바 */
+.main-nav {
+  background-color: #2c5dbf; /* 더 진한 파란색 배경 */
+  padding: 10px 0;
+}
+
+.main-nav .menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav .menu li {
+  position: relative;
+  margin: 0 20px;
+}
+
+.main-nav .menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 18px;
+}
+
+.main-nav .menu li a:hover {
+  background-color: #3a76d1; /* 강조색 */
+  border-radius: 4px;
+}
+
+/* 서브 메뉴 */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -48%;
+  background-color: #333;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.submenu a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.submenu a:hover {
+  background-color: #3a76d1; /* 강조색 */
+  border-radius: 4px;
+}
+
+/* 메뉴 항목 hover 시 서브 메뉴 보이기 */
+.main-nav .menu li:hover .submenu {
+  display: block;
+}
+
+/* 푸터 */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #3a76d1; /* 파란색 배경 */
+  color: white;
+  margin-top: auto;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* Hero 섹션 */
+.hero {
+  text-align: center;
+  background-color: #e0eaff;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  font-size: 1.2rem;
+  color: white;
+  background-color: #3a76d1;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 버튼 내 Link 스타일 */
+.hero button a {
+  text-decoration: none;  /* 밑줄 제거 */
+  color: white;  /* 링크 색상을 버튼 텍스트 색과 동일하게 설정 */
+  transition: color 0.3s ease;  /* 색상 변화 부드럽게 */
+}
+
+.hero button:hover {
+  background-color: #5e98db;
+}
+
+/* 사이트 소개 섹션 */
+.about {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* 전체 레이아웃 */
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  padding-bottom: 50px; /* 푸터 공간 확보 */
+}
+
+/* .sanup-page-container, .page-title, .intro-text 등 필요에 따라 추가 */
+.sanup-page-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.content-section {
+  margin-bottom: 40px;
+}
+
+.content-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  border-radius: 8px;
+  width: 65%; /* 크기 줄이기 */
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+}
+
+.links-list li {
+  margin-bottom: 10px;
+}
+
+.links-list a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #3a76d1; /* 새로운 링크 색상 */
+  transition: color 0.3s ease;
+}
+
+.links-list a:hover {
+  color: #5e98db; /* hover 색상 */
+}
+
+/* .hero 및 .about 섹션이 사라지거나 표시될 때의 애니메이션 */
+.hero, .about {
+  transition: opacity 0.5s ease;
+}
+
+/* .hero, .about 섹션이 사라졌을 때 */
+.hero.hidden, .about.hidden {
+  opacity: 0;
+  pointer-events: none; /* 섹션 클릭 방지 */
+}
+
+/* 공부 시작 후 레이아웃 변경 */
+.main {
+  margin-top: 20px;
+}
